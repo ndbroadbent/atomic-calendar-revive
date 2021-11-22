@@ -183,6 +183,7 @@ class AtomicCalendarRevive extends LitElement {
 				this.isUpdating = true;
 				try {
 					this.events = await this.getEvents();
+					console.log({ events: this.events })
 
 					// Check no event days and display
 					this.events = this.sortEvents(this.events);
